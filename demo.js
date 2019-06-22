@@ -1,6 +1,7 @@
-var http = require('http')
+var http = require('http');
 
 http.createServer(function(req, res){
-	res.write("helo")
-	res.end()
-}).listen(8080)
+	res.writeHead(200,{'Content-Type':'text/html'});
+	res.write("helo");
+	res.end();
+}).listen(8080);
